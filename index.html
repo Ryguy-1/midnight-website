@@ -3,133 +3,149 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy - Midnight App</title>
+    <title>Midnight App - Privacy Policy</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
       rel="stylesheet"
     />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
       body {
         font-family: "Roboto", sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #000;
-        color: #fff;
-        overflow-x: hidden;
+        background-color: #000000;
+        color: #e0e0e0;
       }
-      .container {
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 20px;
-        background-color: #1a1a1a;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-        animation: fadeIn 1s ease-in-out;
+      .accent-color {
+        color: #ffc933;
       }
-      h1,
-      h2 {
-        color: #fff;
-        margin-top: 0;
-      }
-      p,
-      ul {
-        line-height: 1.6;
-        color: #ccc;
-      }
-      ul {
-        padding-left: 20px;
-      }
-      ul li {
-        margin-bottom: 10px;
-      }
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      @media (max-width: 600px) {
-        .container {
-          margin: 20px;
-          padding: 15px;
-        }
-        h1 {
-          font-size: 1.5rem;
-        }
-        h2 {
-          font-size: 1.25rem;
-        }
+      .accent-border {
+        border-color: #ffc933;
       }
     </style>
   </head>
-  <body>
-    <div class="container">
-      <h1>Privacy Policy</h1>
-      <p>
-        Welcome to Midnight! This privacy policy explains how we handle your
-        information when you use our app.
-      </p>
+  <body class="min-h-screen flex flex-col">
+    <header class="py-6 border-b accent-border">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold text-center accent-color">Midnight</h1>
+        <p class="text-center mt-2 text-gray-400">Privacy Policy</p>
+      </div>
+    </header>
 
-      <h2>Key Features</h2>
-      <ul>
-        <li>
-          Minute Message Lifespan: Your messages will self-destruct in mere
-          minutes. It's like Snapchat, but for people who think even that's too
-          long.
-        </li>
-        <li>Star System: Send messages, earn stars, gain clout.</li>
-      </ul>
+    <main class="flex-grow container mx-auto px-4 py-8">
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4 accent-color">
+          1. Introduction
+        </h2>
+        <p class="mb-4">
+          Welcome to Midnight, the app that lets you send self-destructing
+          messages. This Privacy Policy explains how we handle your information
+          when you use our mobile application.
+        </p>
+      </section>
 
-      <h2>Information Collection and Use</h2>
-      <p>
-        We value your privacy and are committed to protecting it. Here's how we
-        handle your information:
-      </p>
-      <ul>
-        <li>
-          We do not store your messages. Once they are sent and viewed, they are
-          permanently deleted from our servers.
-        </li>
-        <li>
-          We collect minimal information necessary for the app to function, such
-          as user ID and message metadata (timestamps, sender/receiver IDs).
-        </li>
-        <li>
-          We use this information solely to provide the service and improve the
-          app's functionality.
-        </li>
-      </ul>
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4 accent-color">
+          2. Information We Collect
+        </h2>
+        <p class="mb-4">
+          Midnight is designed with privacy in mind. We collect and use only the
+          minimum information necessary to provide our service:
+        </p>
+        <ul class="list-disc list-inside space-y-2 mb-4">
+          <li>Your email address (for account creation and login)</li>
+          <li>Message content (temporarily stored for delivery)</li>
+          <li>
+            Message timeout settings (to determine when to delete messages)
+          </li>
+        </ul>
+        <p class="mb-4">
+          We do not collect or store phone numbers or any other personal
+          information beyond what's listed above.
+        </p>
+      </section>
 
-      <h2>Data Security</h2>
-      <p>
-        We take data security seriously. Although we do not store your messages,
-        we implement industry-standard measures to protect the minimal data we
-        do collect from unauthorized access and breaches.
-      </p>
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4 accent-color">
+          3. How We Use Your Information
+        </h2>
+        <p class="mb-4">
+          We use your information solely for the purpose of providing the
+          Midnight messaging service:
+        </p>
+        <ul class="list-disc list-inside space-y-2 mb-4">
+          <li>
+            Your email is used for account authentication and to send important
+            account-related notifications
+          </li>
+          <li>
+            Message content is temporarily stored to ensure delivery to the
+            recipient
+          </li>
+          <li>
+            Timeout settings are used to implement the message self-destruct
+            feature
+          </li>
+        </ul>
+      </section>
 
-      <h2>Third-Party Services</h2>
-      <p>
-        We do not share your information with third parties. Your data remains
-        with us and is used only for providing the services of the Midnight app.
-      </p>
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4 accent-color">
+          4. Message Deletion
+        </h2>
+        <p class="mb-4">
+          Messages sent through Midnight are automatically and permanently
+          deleted from our servers after the timeout period specified by the
+          sender. Once a message is deleted, it cannot be recovered by anyone,
+          including us.
+        </p>
+      </section>
 
-      <h2>Changes to This Privacy Policy</h2>
-      <p>
-        We may update our privacy policy from time to time. Any changes will be
-        posted on this page, and we will notify you of significant changes
-        through the app.
-      </p>
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4 accent-color">
+          5. Data Security
+        </h2>
+        <p class="mb-4">
+          We employ industry-standard security measures to protect your
+          information and ensure the confidentiality of your messages while they
+          are stored on our servers. However, no method of transmission over the
+          internet or electronic storage is 100% secure, so we cannot guarantee
+          absolute security.
+        </p>
+      </section>
 
-      <p>
-        <strong
-          >Thank you for choosing Midnight! Your secrets are safe with
-          us.</strong
-        >
-      </p>
-    </div>
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4 accent-color">
+          6. Third-Party Services
+        </h2>
+        <p class="mb-4">
+          We use Google Analytics to help us understand how our app is used.
+          Google Analytics collects anonymous usage data. You can learn more
+          about Google's privacy practices at
+          <a
+            href="https://policies.google.com/privacy"
+            class="text-blue-400 hover:text-blue-300"
+            >https://policies.google.com/privacy</a
+          >.
+        </p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4 accent-color">
+          7. Changes to This Policy
+        </h2>
+        <p class="mb-4">
+          We may update our Privacy Policy from time to time. We will notify you
+          of any changes by posting the new Privacy Policy on this page and
+          updating the "Last updated" date at the bottom of this policy.
+        </p>
+      </section>
+    </main>
+
+    <footer class="py-6 mt-12 border-t accent-border">
+      <div class="container mx-auto px-4 text-center text-gray-400">
+        <p>&copy; 2024 Midnight App. All rights reserved.</p>
+        <p class="mt-2">Last updated: August 4, 2024</p>
+      </div>
+    </footer>
   </body>
 </html>
